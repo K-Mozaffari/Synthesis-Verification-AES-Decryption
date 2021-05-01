@@ -1,0 +1,64 @@
+// Command: reset
+// Warning: Reset the system and deleting all design data
+// Warning: Existing golden design has been deleted
+// Warning: Existing golden library has been deleted
+// Warning: Existing revised design has been deleted
+// Warning: Existing revised library has been deleted
+// Command: read library -Both -Replace  -sensitive  -Statetable  -Liberty /nfs/home/k/k_mozaff/conformal/class.lib -nooptimize   
+// Parsing file /nfs/home/k/k_mozaff/conformal/class.lib ...
+// Note: Read Liberty library successfully
+// Command: read design ./aes_dec_synth.vhdl  -VHDL -Golden            -continuousassignment Bidirectional   -nokeep_unreach    -norangeconstraint
+// Loading "synopsys.attributes" (system "attributes.vhd")
+// Loading "ieee.std_logic_1164" (system "std_logic_1164.vhd")
+// Parsing file "./aes_dec_synth.vhdl" ... (library work)
+// Compiling entity "key_expansion"
+// Compiling architecture "key_expansion(SYN_Behavioral)"
+// Compiling entity "aes_dec_KEY_SIZE2"
+// Compiling architecture "aes_dec_KEY_SIZE2(SYN_Behavioral)"
+// Generating logic ...
+// Golden root module is set to 'aes_dec_KEY_SIZE2'
+// Warning: (RTL14) Signal has input but it has no output (occurrence:2432)
+// Note: Read VHDL design successfully
+// Command: read design ./aes_dec_KEY_SIZE2_syn_Debuged_Conformal.vhdl -VHDL -Revised            -continuousassignment Bidirectional   -nokeep_unreach    -norangeconstraint
+// Loading "synopsys.attributes" (system "attributes.vhd")
+// Loading "ieee.std_logic_1164" (system "std_logic_1164.vhd")
+// Parsing file "./aes_dec_KEY_SIZE2_syn_Debuged_Conformal.vhdl" ... (library work)
+// Compiling entity "key_expansion"
+// Compiling architecture "key_expansion(SYN_Behavioral)"
+// Compiling entity "aes_dec_KEY_SIZE2"
+// Compiling architecture "aes_dec_KEY_SIZE2(SYN_Behavioral)"
+// Generating logic ...
+// Revised root module is set to 'aes_dec_KEY_SIZE2'
+// Warning: (RTL14) Signal has input but it has no output (occurrence:2369)
+// Note: Read VHDL design successfully
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            21     10     2575      2606    
+--------------------------------------------------------------------------------
+Revised           21     10     2575      2606    
+================================================================================
+// Command: report design similarity
+================================================================================
+Similarity      Region (Golden)
+--------------------------------------------------------------------------------
+    88%         / (root module)
+================================================================================
+// Command: add compared points -all
+// 2585 compared points added to compare list
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           10     2575      2585    
+================================================================================
+// Command: diagnose -summary
+There is no non-equivalent compare point for diagnosis.

@@ -1,0 +1,36 @@
+*********************************************************************************
+COEN 6551 Formal Verification 
+Summer 2020
+Electrical And Computer Engineering Concordia University
+Project: Verification of an AES Decryption Design
+Auther:
+Kamalaldin Mozaffari Majd
+ 
+********************************************************************************
+Source Files:
+1- aes_dec.vhdl
+2- aes_pkg.vhdl
+3- key_expansion.vhdl
+********************************************************************************
+Synthesized:
+1-aes_dec_synth.vhdl
+********************************************************************************
+                                       Conformal 
+********************************************************************************
+Debugged files by using Conformal
+1- aes_dec_KEY_SIZE2_syn_Debuged_Conformal.vhdl
+
+Conformal Scripts:
+1- conformal_bahve_synth.do 
+2- conformal_synth_buggy.do
+
+Conformal Outputs:
+1- OutputSynth_Conformal.txt
+2- OutputDebugged_Conformal.txt
+********************************************************************************
+                                        Formality 
+********************************************************************************
+
+
+
+
